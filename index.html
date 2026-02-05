@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>MathPlay</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<h1>MathPlay</h1>
+
+<select id="difficultySelect">
+<option value="easy">Fácil</option>
+<option value="medium">Médio</option>
+<option value="hard">Difícil</option>
+</select>
+
+<select id="typeSelect">
+<option value="mix">Misto</option>
+<option value="first">Equação 1º grau</option>
+<option value="second">Equação 2º grau</option>
+</select>
+
+<div id="question"></div>
+
+<input type="number" id="answer" placeholder="Valor solicitado">
+<button onclick="checkAnswer()">Responder</button>
+<button class="reset" onclick="resetXP()">Resetar XP</button>
+
+<div id="feedback"></div>
+<p id="xp">XP: 0</p>
+</div>
+
+<script src="js/engine.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
